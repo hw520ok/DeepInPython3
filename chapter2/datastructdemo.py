@@ -29,4 +29,19 @@ def dolistdemo():
 	a_list.extend(["a","b","c"])
 	print(a_list,"len:" + str(len(a_list)))
 
-dolistdemo()
+	a_list = [1]
+	if a_list:
+		print(True)
+	else:
+		print(False)
+
+def dosetdemo():
+	a_set = {1}
+
+	a_list = ["a","b","c","d","a"]
+	a_set = set(a_list)
+	print(a_set)
+	a_set.discard("a")
+	print(a_set)
+
+dosetdemo()
